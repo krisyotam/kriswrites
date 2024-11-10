@@ -1,0 +1,191 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Bodoni MT', serif; /* Bodoni font */
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #f4f4f4;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+/* Navbar */
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #0073e6;
+}
+
+/* Main Content Area */
+main {
+    margin-top: 40px;
+}
+
+/* Section Styling */
+.section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    margin-bottom: 40px;
+}
+
+.section h2 {
+    text-align: center;
+    font-size: 2.2em;
+    margin-bottom: 30px;
+}
+
+.section p {
+    text-align: center;
+    font-size: 1.1em;
+    color: #666;
+}
+
+/* Insights Grid Styling */
+#insights-grid .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+#insights-grid .grid-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#insights-grid .grid-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+#insights-grid .grid-item h3 {
+    font-size: 1.6em;
+    margin-bottom: 15px;
+}
+
+#insights-grid .grid-item p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+#insights-grid .grid-item a {
+    text-decoration: none;
+    color: #0073e6;
+    font-weight: bold;
+}
+
+#insights-grid .grid-item a:hover {
+    text-decoration: underline;
+}
+
+/* Fiction Section Styling */
+#fiction {
+    background-color: #fff;
+}
+
+#fiction p {
+    font-size: 1.1em;
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* About Section Styling */
+#about {
+    background-color: #f4f4f4;
+}
+
+#about p {
+    font-size: 1.1em;
+    text-align: center;
+    color: #666;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #f4f4f4;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+
+footer p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero h2 {
+        font-size: 2em;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-item h3 {
+        font-size: 1.4em;
+    }
+
+    footer p {
+        font-size: 0.9em;
+    }
+}
+
+
